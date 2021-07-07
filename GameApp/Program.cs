@@ -82,7 +82,7 @@ namespace GameApp
                     case Options.ADVANCED:
                         Console.WriteLine("Advanced Level");
                         System.Reflection.Assembly advancedLevelLib =
-         System.Reflection.Assembly.LoadFile(@"C:\Users\lakshmi.l\source\repos\latebinding-using-reflection-lakshmil2514-main\GameApp\bin\Debug\AdvancedLevelLibs");
+         System.Reflection.Assembly.LoadFile(@"C:\Users\lakshmi.l\source\repos\latebinding-using-reflection-lakshmil2514-main\GameApp\bin\Debug\AdvancedLevelLibs.dll");
                         System.Type advancedLevelTypeClassRef = advancedLevelLib.GetType("AdvancedlLib.AdvancedLevelType");
                         if (advancedLevelTypeClassRef != null)
                         {
