@@ -23,9 +23,11 @@ namespace GameApp
             
                 string displayMessage = $"Enter Your Choice {(int)Options.BASIC}->Basic,{(int)Options.INTERMEDIATE}->Intermediate,{(int)Options.ADVANCED}->Advanced";
                 Console.WriteLine(displayMessage);
+            try { 
+
                 Options _choice = (Options)Int32.Parse(Console.ReadLine());
-            try 
-            { 
+            
+    
 
                 switch (_choice)
                 {
@@ -51,7 +53,7 @@ namespace GameApp
                                     //Invoke NonStatic Method
                                     // string Play(string playerName, int earlierPoints){}
                                     //object result=  _methodRef.Invoke(objRef, new object[] {"Tom",20 });
-                                    object result = _methodRef.Invoke(objRef, new object[] {"sham",25 });
+                                    object result = _methodRef.Invoke(objRef, new object[] { });
                                     Console.WriteLine(result.ToString());
                                 }
 
@@ -70,10 +72,10 @@ namespace GameApp
                             if (intermediateLevelTypeClassRef.IsClass)
                             {
                                 Object objectRef = System.Activator.CreateInstance(intermediateLevelTypeClassRef);
-                                System.Reflection.MethodInfo _methodRef = intermediateLevelTypeClassRef.GetMethod("Play");
+                                System.Reflection.MethodInfo _methodRef = intermediateLevelTypeClassRef.GetMethod("Start");
                                 if (!_methodRef.IsStatic)
                                 {
-                                    object result = _methodRef.Invoke(objectRef, new object[] {"Ram",10 });
+                                    object result = _methodRef.Invoke(objectRef, new object[] {"Ram"});
                                     Console.WriteLine(result.ToString());
                                 }
                             }
@@ -82,7 +84,7 @@ namespace GameApp
                     case Options.ADVANCED:
                         Console.WriteLine("Advanced Level");
                         System.Reflection.Assembly advancedLevelLib =
-         System.Reflection.Assembly.LoadFile(@"C:\Users\lakshmi.l\source\repos\latebinding-using-reflection-lakshmil2514-main\GameApp\bin\Debug\AdvancedLevelLibs.dll");
+         System.Reflection.Assembly.LoadFile(@"C:\Users\lakshmi.l\source\repos\latebinding-using-reflection-lakshmil2514-main\GameApp\bin\Debug\AdvancedLevelLibs");
                         System.Type advancedLevelTypeClassRef = advancedLevelLib.GetType("AdvancedlLib.AdvancedLevelType");
                         if (advancedLevelTypeClassRef != null)
                         {
@@ -90,10 +92,10 @@ namespace GameApp
                             if (advancedLevelTypeClassRef.IsClass)
                             {
                                 Object objectRef = System.Activator.CreateInstance(advancedLevelTypeClassRef);
-                                System.Reflection.MethodInfo _methodRef = advancedLevelTypeClassRef.GetMethod("Play");
+                                System.Reflection.MethodInfo _methodRef = advancedLevelTypeClassRef.GetMethod("Begin");
                                 if (!_methodRef.IsStatic)
                                 {
-                                    object result = _methodRef.Invoke(objectRef, new object[] {"Toe",45 });
+                                    object result = _methodRef.Invoke(objectRef, new object[] {"Toe",45});
                                     Console.WriteLine(result.ToString());
                                 }
                             }
