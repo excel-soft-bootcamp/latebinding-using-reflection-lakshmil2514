@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ESi6tcgd1/cYaa9dk2M12JQxV4yRzchUoVHpkn38oH/056wWYB8PGmrZL9UpGyx2CGromIJ/OtPCnyHMU8rghg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lakshmi.l\\Downloads\\latebinding-using-reflection-lakshmil2514-main\\latebinding-using-reflection-lakshmil2514-main\\ConditionCheckLib\\ConditionCheckLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\lakshmi.l\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
